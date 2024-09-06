@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud7TlRbs/ic4AwGcFZOxg5DpPt8EgeUIgIwzjWfXQKWA3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-gaQ1PqLgxI3T7TkT1O3qvYulqIr6XF57r1cPYjUw5QG3jpF5P06PJFUQ9jeJiFj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/49a9d9059e.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </head>
 <body>
+    <div class="main-container">
     <nav class="navbar navbar-expand-lg navbar-custom navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img id="logo" src="assests/logo3.png"></a>
@@ -33,10 +36,6 @@
                         <a class="nav-link" href="contact.html">Contact us</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -52,10 +51,46 @@
                 </p>
             </div>
         </div>
-        <div class="col-md-3"></div>
+        <div class="col-md-1"></div>
+        <div class="col-6">
+            
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <!-- <div id="loader" class="loader">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    
+                </div> -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_4288,h_2412,c_limit/BlackForest-Germany-GettyImages-147180370.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.metroparks.net/wp-content/uploads/2017/06/1080p_HBK_autumn-morning_GI.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_4288,h_2412,c_limit/BlackForest-Germany-GettyImages-147180370.jpg" class="d-block w-100" alt="Image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- <div class="col-md-3"></div>
         <div class="blue_logo col-md-3">
             <img src="assests/logo_blue-removebg-preview.png" width="200px">
-        </div>
+        </div> -->
     </div>
     <!-- <div class="row">
         <div class="heading">
@@ -172,26 +207,56 @@
 </div>
 <br>
 <div class="row">
-    <div class="about-body-card col-md-11">
+    <div class="col-1"></div>
+    <div class="about-body-card1 col-10 ">
         <div class="heading">
             Use Cases
         </div>
-        <div class="about-body">
-            <p>
-                <b>• Government and Urban Planners:</b> Use our high-resolution NO2 maps to identify pollution hotspots and develop targeted interventions, such as optimizing traffic flow, creating low-emission zones, or enhancing public transportation routes to reduce vehicle emissions. Our platform provides the necessary data to inform policy decisions and infrastructure planning for cleaner, healthier cities.
-                <br>
-                <br>
-                <b>• Environmental Researchers and Academics:</b> Leverage our comprehensive data to study the correlation between NO2 levels and other environmental factors, such as temperature, humidity, and wind speed. Researchers can use our platform to analyze historical trends and predict future air quality scenarios, contributing to the development of more effective pollution control measures.
-                <br>
-                <br>
-                <b>• Public Health Officials:</b> Monitor air quality in real-time and use our data to issue health advisories, especially for vulnerable populations such as children, the elderly, and those with respiratory conditions. Our platform helps public health officials understand the impact of air pollution on community health and plan public awareness campaigns to mitigate risks.
-                <br>
-                <br>
-                <b>• Citizens and Communities:</b> Access up-to-date air quality information to make informed decisions about outdoor activities. Communities can use our platform to advocate for cleaner air policies and take collective action to reduce local pollution sources.
-                <br>
-                <br>
-                <b>• Businesses and Corporations:</b> Companies, especially those in logistics and manufacturing, can use our data to assess the environmental impact of their operations and develop strategies to minimize emissions. Businesses can also use our platform to demonstrate their commitment to sustainability and corporate social responsibility.
-            </p>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+            <div id="carouselExampleDark1" class="carousel carousel-dark slide">
+                <!-- <div id="loader" class="loader">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    
+                </div> -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assests/1.jpg" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assests/2.jpg" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assests/3.jpg" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assests/4.jpg" class="d-block w-100" alt="Image 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assests/5.jpg" class="d-block w-100" alt="Image 5">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+        </div>
         </div>
     </div>
 </div>
@@ -249,6 +314,6 @@
         <p class="footer">2024 by Team Vaayuhita.</p>
     </div>
 </div>
-
+</div>
 </body>
 </html>
