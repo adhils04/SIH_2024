@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/49a9d9059e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,16 +28,12 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Press Release</a>
+                        <a class="nav-link" href="#">Terminologies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact us</a>
+                        <a class="nav-link" href="contact.html">Feedback</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -44,27 +41,30 @@
     <div class="container-fluid">
         <div class="row">
             <div class="card col-4">
-                <h1 class="heading">Section 1</h1>
-                <iframe
-                    src="kepler_no2_map_delhi.html"
-                    class="w-100" height="400" allowfullscreen="" loading="lazy"></iframe>
+                <h1 class="heading">Map View</h1>
+                <h6 style="align-self: center;color: #161D6F;font-weight: bolder;">Period:</h6>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" placeholder="Select" id="btn">Select</button>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                      <li><a class="dropdown-item" onclick="select('Fortnight')">Fortnight</a></li>
+                      <li><a class="dropdown-item" onclick="select('Month')">Month</a></li>
+                      <li><a class="dropdown-item" onclick="select('Season')">Season</a></li>
+                      <li><a class="dropdown-item" onclick="select('Year')">Year</a></li>
+                    </ul>
+                  </div>
             </div>
-            <div class="card col-4">
-                <h1 class="heading">Section 2</h1>
+        
+            <div class="card col-8">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115681.29592731265!2d-77.47713270775661!3d25.0326996781907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7c99b981dbc9%3A0x2aef01d3485e50d2!2sNassau%2C%20Bahamy!5e0!3m2!1spl!2spl!4v1624445118063!5m2!1spl!2spl"
-                    class="w-100" height="400" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <div class="card col-4">
-                <h1 class="heading">Section 3</h1>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115681.29592731265!2d-77.47713270775661!3d25.0326996781907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x892f7c99b981dbc9%3A0x2aef01d3485e50d2!2sNassau%2C%20Bahamy!5e0!3m2!1spl!2spl!4v1624445118063!5m2!1spl!2spl"
-                    class="w-100" height="400" allowfullscreen="" loading="lazy"></iframe>
+                    src="kepler_no2_maplegends.html"
+                    class="w-100" height="400" allowfullscreen="" loading="lazy" id="iframe"></iframe>
             </div>
         </div>
         <div class="row">
             <div class="col-12 link-card">
-                <marquee>Newsletter June 2024 edition, Call for Abstract regarding CURTAIN RAISE 2024, Data Supply portal</marquee>
+                    <marquee>
+                        <span id="api_data"></span>
+                    </marquee>
             </div>
         </div>
         <!--<div class="row">
@@ -84,14 +84,16 @@
                 <br>
                 <h1 class="heading">IMPORTANT LINKS</h1>
             </div>
-            
         </div>
     </div>
+    <br>
+    <br>
     <div class="bottom">
         <div class="d-flex flex-row justify-content-center">
             <i class="fa-regular fa-copyright"></i>
             <p class="footer">2024 by Team Vaayuhita</p>
         </div>
     </div>
+    
 </body>
 </html>
