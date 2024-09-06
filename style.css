@@ -1,9 +1,9 @@
 body {
-    background-color: #f0f0f0; 
-    height: 100vh;
-    background-size: cover;
+    position: relative;
+    /* margin: 0;
+    height: 100vh; */    
     font-family: 'Times New Roman', Times, serif; 
-    color: #333;
+    background-color: white;
 }
 .navbar-toggler{
     background-color:white;
@@ -125,6 +125,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     background-color: #fff;  
+    
 }
 
 .about-card:hover {
@@ -148,6 +149,22 @@ body {
     background-color: #fff;  
 }
 
+.about-body-card1 {
+    padding: 10px;
+    margin-left: -20px;
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;  
+}
+.about-body-card2 {
+    padding: 10px;
+    margin-left: 80px;
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;  
+}
 .about-body-side-card {
     padding: 10px;
     margin-left: 2px;
@@ -162,6 +179,11 @@ body {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
+.about-body-card1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
 
 .about-body-side-card:hover {
     transform: scale(1.05);
@@ -233,6 +255,10 @@ body {
     margin-bottom: 20px;
 }
 
+.dropdown{
+    margin-left: 42%;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -248,6 +274,11 @@ form {
     flex-direction: column;
     width: 48%;
 }
+
+.contact_icon{
+    font-size: 24px;
+}
+
 
 label {
     margin-bottom: 5px;
@@ -265,4 +296,78 @@ input, textarea {
 textarea {
     resize: none;
     height: 100px;
+}
+.carousel{
+    width: 100%;
+    
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: #09101d;
+    position: relative;
+}
+.carousel img{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-inner{
+    background-color: white;
+}
+
+#carouselExampleDark{
+    position: relative;
+    top: 80px;
+    
+}
+#carouselExampleDark1{
+    margin-left: 0px;
+}
+#carouselExampleDark1 img{
+    margin-top: 0px;
+    /* margin-left: 50px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it's on top of the carousel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 3px;
+    background-color: #fff; /* White color */
+    border-radius: 50%;
+    display: inline-block;
+    animation: bounce 1.2s infinite;
+}
+
+.loader .dot:nth-child(1) { animation-delay: 0.1s; }
+.loader .dot:nth-child(2) { animation-delay: 0.2s; }
+.loader .dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Add blue contrast */
+.loader .dot:hover {
+    background-color: #161D6F; /* Blue color */
+}
+
+
+.body-bg{
+    background-image: url(./assests/about_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
